@@ -498,13 +498,22 @@ h1, h2, h3 {
 
 
 /* FOOTER */
+/* colors */
+.bg-brown-light{
+    background: #5B4024;
+}
 .bg-brown{
     background: #422E1A;
 }
 .bg-brown-dark{
     background: #312213;
 }
-
+.font-helvetica{
+    font-family: Helvetica, Arial, sans-serif;
+}
+.text-yellow{
+    color: #eeb574;
+}
 .mt-30{
     margin-top: 1.875rem;
 }

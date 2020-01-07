@@ -84,3 +84,27 @@ h1, h2, h3 {
 .slogan {
     font-size: 120px;
 }
+
+h2{
+    color: rgb(220, 128, 103);
+}
+.prestations{
+    background-image: url("galette-bg.jpg");
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+}
+
+.galette{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 196px;
+    width: 967px;
+}
+
+.font{
+    font-family: "Caferus Normal";
+}
+
+.orange{
+    color: rgb(251, 87, 2);
+}

@@ -498,6 +498,17 @@ h1, h2, h3 {
 
 
 /* FOOTER */
-.bg-brown-light{
+.bg-brown{
     background: #422E1A;
+}
+.bg-brown-dark{
+    background: #312213;
+}
+
+.mt-30{
+    margin-top: 1.875rem;
+}
+
+.mb-66{
+    margin-bottom: 4.125rem;
 }

@@ -511,6 +511,9 @@ h1, h2, h3 {
 .font-helvetica{
     font-family: Helvetica, Arial, sans-serif;
 }
+.font-size-21{
+    font-size: 1.3rem;
+}
 .text-yellow{
     color: #eeb574;
 }

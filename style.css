@@ -165,3 +165,42 @@ h1, h2, h3 {
         font-size: 9vw;
     }
 }
+
+/* SECTION SERVICES + PRESENTATION */ 
+.verbar{
+    display: none;
+}
+.background2{
+    background: url("slide-1.jpg") no-repeat;
+    height: 638px;
+    object-fit: cover;
+    object-position: center;
+}
+.circles{
+    background-color: #C67A00;
+    border: none;
+}
+.background3{
+    height: 560px;
+}
+.bar{
+    margin:40px;
+}
+.description{
+    margin: 20px;
+    width:50%;
+}
+@media (min-width: 0px) and (max-width: 1260px){
+    .bar{
+        display: none;
+    }
+    .verbar{
+        display: block;
+        margin: 10px;
+    }
+}
+@media (min-width: 0px) and (max-width: 960px){
+    .description{
+        width:90%;
+    }
+}

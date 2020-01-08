@@ -3,10 +3,16 @@
     font-family: 'Carefus Normal';
     src: url("fonts/CaferusNormal.otf") format("otf");
 }
+.verbar{
+    display: none;
+}
 
 body, h1{
     margin: 0;
     padding: 0;
+}
+h1{
+    font-size: 60px;
 }
 
 h1, h2, h3 {
@@ -34,10 +40,23 @@ h1, h2, h3 {
     height: 560px;
 }
 .bar{
-    margin:20px;
-    margin-top: 10px;
+    margin:40px;
 }
 .description{
     margin: 20px;
     width:50%;
+}
+@media (min-width: 0px) and (max-width: 1260px){
+    .bar{
+        display: none;
+    }
+    .verbar{
+        display: block;
+        margin: 10px;
+    }
+}
+@media (min-width: 0px) and (max-width: 960px){
+    .description{
+        width:90%;
+    }
 }

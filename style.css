@@ -87,6 +87,37 @@ h1, h2, h3 {
 
 h2{
     color: rgb(220, 128, 103);
+    font-size: 5rem;
+}
+
+h2:before{
+    content: "";
+    position: relative;
+    top: 0;
+    width: 20vw;
+    overflow: hidden;
+    height: 50px;
+    display: inline-block;
+    background: url(vibration.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+    margin-right: 30px;
+}
+
+h2:after{
+    content: "";
+    position: relative;
+    top: 0;
+    width: 20vw;
+    overflow: hidden;
+    height: 50px;
+    display: inline-block;
+    background: url(vibration.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+    margin-left: 30px;
 }
 .prestations{
     background-image: url("galette-bg.jpg");
@@ -121,4 +152,12 @@ h2{
     .marron{
         padding-bottom: 70px;
 
+}
+
+h2:before{
+    display: none;
+}
+
+h2:after{
+    display: none;
 }

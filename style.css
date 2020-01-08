@@ -3,7 +3,9 @@
     font-family: 'Carefus Normal';
     src: url("fonts/CaferusNormal.otf") format("otf");
 }
-
+html {
+    font-size: 62.5%;
+}
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -16,9 +18,11 @@ h1, h2, h3 {
 /* HEADER */
 
 .header {
-    /* background: url(images/bg-header.jpg) center fixed; */
     height: 100vh; 
     width: 100%;
+}
+.pos-relative {
+    position: relative;
 }
 .size-logo {
     width: 150px;
@@ -28,26 +32,26 @@ h1, h2, h3 {
 }
 .pos-logo {
     position: absolute;
-    top: 30px;
-    left: 15%;
+    top: 3rem;
+    left: 1rem;
     z-index: 1000;
 }
 .pos-adress {
     position: absolute;
-    top: 67px;
-    left: 26%;
+    top: 6rem;
+    left: 20rem;
     z-index: 1000;
     color: white;
-    font-size: 20px;
+    font-size: 1.8rem;
     width: auto;
 }
 .pos-phone {
     position: absolute;
-    top: 97px;
-    left: 37%;
+    top: 9rem;
+    left: 41rem;
     z-index: 1000;
     color: white;
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 .list-nav {
     list-style: none;
@@ -61,26 +65,103 @@ h1, h2, h3 {
 .list-style a {
     color: white;
 }
-.menu {
-    position: relative;
-}
 .pos-menu {
     position: absolute;
-    top: 67px;
-    left: 50%;
+    top: 6rem;
+    right: -5rem;
     z-index: 1000;
     color: white;
-    font-size: 35px;
-    width: auto;
+    font-size: 2.4rem;
 }
 .pos-slogan {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 900;
     color: white;
 }
 .slogan {
-    font-size: 120px;
+    font-size: 7vw;
+}
+.white-space {
+    white-space: nowrap;
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .size-logo {
+        width: 100px;
+        height: 100px;
+    }
+    .pos-adress {
+        top: 4rem;
+        left: 13rem;
+        font-size: 1.3rem;
+    }
+    .pos-phone {
+        top: 10rem;
+        left: 13rem;
+        font-size: 1.3rem;
+    }
+    .slogan {
+        font-size: 14vw;
+    }
+    .carousel-item {
+        display: none !important;
+    }
+    .try {
+        background-image: url("images/bg-header-3.png");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .pos-adress {
+        top: 6rem;
+        left: 23rem;
+    }
+    .pos-phone {
+        top: 15rem;
+        left: 23rem;
+    }
+    .slogan {
+        font-size: 12vw;
+    }
+    .carousel-item {
+        display: none !important;
+    }
+    .try {
+        background-image: url("images/bg-header-3.png");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .slogan {
+        font-size: 9vw;
+    }
+    .carousel-item {
+        display: none !important;
+    }
+    .try {
+        background-image: url("images/bg-header-3.png");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .slogan {
+        font-size: 9vw;
+    }
 }

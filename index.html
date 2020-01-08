@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-burger.css">
 
     <title>Boulangerie Bakery</title>
 </head>
@@ -15,38 +16,78 @@
 <body>
     <header id="carouselExampleSlidesOnly" class="carousel slide header" data-ride="carousel">
         <div class="carousel-inner">
+            <div class="try img-fluid">
             <div class="container">
                 <div class="row no-gutters">
 
-                    <div class="col-1 pos-logo">
-                        <img class="size-logo" src="images/logo.jpg" alt="logo Bakery" width="833" height="833">
+                    <div class="col-6 w-50">
+                        <div class="row pos-relative">
+                            <div class="col-6 pos-logo">
+                                <img class="size-logo" src="images/logo.jpg" alt="logo Bakery" width="833" height="833">
+                            </div>
+                            <div class="col-5 pos-adress">
+                                <p class="white-space">Boulangerie Bakery</p>
+                                <p class="white-space">15 Rue de Besançon</p>
+                                <p class="white-space">70000 VESOUL</p>
+                            </div>
+                            <div class="col-1 pos-phone">
+                                <p>06.00.00.00.00</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-2 pos-adress">
-                        <p>Boulangerie Bakery</p>
-                        <p>15 Rue de Besançon</p>
-                        <p>70000 VESOUL</p>
-                    </div>
-
-                    <div class="col-1 pos-phone">
-                        <p>06.00.00.00.00</p>
-                    </div>
-
-                    <div class="col-8 menu pos-menu">
+                    <div class="col-6 w-50 pos-menu pos-relative">
+                        <div>
+                            <input class="checkInput" type="checkbox" name="check-input" id="check">
+                
+                            <label for="check" class="check">
+                                <div class="span-menu">MENU</div>
+                                <span class="span-1"></span>
+                                <span class="span-2"></span>
+                                <span class="span-3"></span>
+                            </label>
+                
+                            <nav class="nav-style">
+                
+                                <ul class="list-style">
+                
+                                    <li class="li-style">
+                                        <label for="check">
+                                            <a class="link-style" id="link-style1" href="#presentation">Présentation</a>
+                                        </label>
+                                    </li>
+                                    <li class="li-style">
+                                        <label class="" for="check">
+                                            <a class="link-style" id="link-style2" href="#prestation">Prestations</a>
+                                        </label>
+                
+                                    </li>
+                                    <li class="li-style">
+                                        <label class="" for="check">
+                                            <a class="link-style" id="link-style4" href="#contact">Contact</a>
+                                        </label>
+                
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="bgc">
+                            </div>
+                        </div>
                         <nav class="nav-header">
-                            <ul class="list-nav d-flex">
+                            <ul class="list-nav d-flex white-space">
                                 <li class="list-style"><a href="#presentation">Présentation</a></li>
                                 <li class="list-style"><a href="#prestation">Prestations</a></li>
-                                <li class="list-style"><a href="#contact">Contact & Accès</a></li>
+                                <li class="list-style"><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="pos-slogan">
-                        <h1 class="slogan">BAKER DE LA FRANCE</h1>
+                        <div class="pos-slogan">
+                        <h1 class="slogan text-center">BAKER DE <br> LA FRANCE</h1>
                     </div>
-
                 </div>
             </div>
+        </div>
+
             <div class="carousel-item active">
 
                 <img src="images/bg-header-1.png" class="d-block w-100 vh-100" alt="...">

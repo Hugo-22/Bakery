@@ -508,6 +508,9 @@ h1, h2, h3 {
 .bg-brown-dark{
     background: #312213;
 }
+.img-fluid{
+    width:calc(100vw/6);
+}
 .font-helvetica{
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -523,9 +526,20 @@ h1, h2, h3 {
 .mb-66{
     margin-bottom: 4.125rem;
 }
-
 @media screen and (max-width:991px){
     .font-size-21{
         font-size: 1.1rem;
     }
 }
+@media screen and (max-width:440px){
+footer .col-6{
+    flex: 0 0 0 70%!important;
+    flex-basis: 70%!important;
+    max-width: 70%!important;
+}
+.logo-bakery{
+    width:100%!important;
+    height:auto;
+}
+}
+

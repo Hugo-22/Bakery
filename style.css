@@ -526,6 +526,6 @@ h1, h2, h3 {
 
 @media screen and (max-width:991px){
     .font-size-21{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }

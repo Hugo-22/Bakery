@@ -108,3 +108,17 @@ h2{
 .orange{
     color: rgb(251, 87, 2);
 }
+
+.marron{
+    color: rgb(102, 59, 16);
+}
+
+.rem2{
+    font-size: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .marron{
+        padding-bottom: 70px;
+
+}

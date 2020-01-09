@@ -13,15 +13,17 @@ body,h1,h2,p {
 }
 
 h1,
-h2,
-h3, .font {
+h2,h3, .font {
     font-family: "Caferus Normal";
 }
+
 h2 {
-    color: rgb(220, 128, 103);
     font-size: 5rem;
 }
 
+.text-brown{
+    color: #422E1A;
+}
 /* HEADER */
 
 .header {
@@ -101,6 +103,8 @@ h2 {
 
 .slogan {
     font-size: 7vw;
+    text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
+
 }
 
 .white-space {
@@ -146,7 +150,7 @@ h2 {
 
 /* SECTION PRESTATIONS */
 
-    h2:before {
+    .boulangerie-h2:before,.boulangerie-h2:after {
         content: "";
         position: relative;
         top: 0;
@@ -160,23 +164,14 @@ h2 {
         margin-right: 30px;
     }
 
-    h2:after {
-        content: "";
-        position: relative;
-        top: 0;
-        width: 20vw;
-        overflow: hidden;
-        height: 50px;
-        display: inline-block;
-        background: url(images/vibration.png);
-        background-repeat: no-repeat;
-        background-position: center;
+    .boulangerie-h2:after {
         margin-left: 30px;
     }
-
+    .prestations-h2{
+        text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
     .prestations {
-        background-image: url("images/galette-bg.jpg");
-        width: 100%;
+        background-image: url("images/galette-bg-op-70.jpg");
         height: 450px;
         background-size: cover;
     }

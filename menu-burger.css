@@ -18,6 +18,7 @@
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.61);
     z-index: 20000;
     display: flex;
     flex-direction: column;
@@ -48,25 +49,36 @@
     /* display: block; */
     width: 2.5rem;
     height: 0.2rem;
-    background-color: #fff;
+    background-color: white;
     margin: .3rem 0;
     transition: all .5s;
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+    /* box-shadow: 5px 5px 3px 1px rgb(0,0,0); */
 }
 .check .span-menu {
     position: absolute;
     top: 1rem;
     right: 5rem;
     font-size: 2rem;
+    color: white;
+    /* text-shadow: 13px 6px 1px rgba(0, 0, 0, 1); */
 }
 
 .checkInput:checked ~ .check .span-1  {
     transform: rotate(-405deg) translateY(.5rem);
+    position: absolute;
+    top: 1.8rem;
+    left: 0.9rem;
 }
 .checkInput:checked ~ .check .span-2  {
   display: none;
 }
 .checkInput:checked ~ .check .span-3  {
     transform: rotate(405deg) translateY(-.6rem);
+    position: absolute;
+    top: 2.6rem;
+    left: 0.9rem;
 }
 
 .nav-style {
@@ -103,7 +115,7 @@
     background-image: linear-gradient(-120deg, transparent 50%, #fff 50%);
     background-size: 223%;
     background-position: 100%;
-    padding: 0 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     transition: all .4s ease;
 }
 
@@ -120,7 +132,7 @@
 }
 .li-style {
     position: relative;
-
+    margin-bottom: 2rem;
 }
 .ppp {
     position: absolute;

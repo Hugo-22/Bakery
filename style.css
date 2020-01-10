@@ -7,20 +7,21 @@
 html {
     font-size: 62.5%;
 }
+
 body,h1,h2,p {
     margin: 0;
     padding: 0;
 }
 
 h1,
-h2,h3, .font {
+h2,
+h3, .font {
     font-family: "Caferus Normal";
 }
-
 h2 {
+    color: rgb(220, 128, 103);
     font-size: 5rem;
 }
-
 .text-brown{
     color: #422E1A;
 }
@@ -76,7 +77,6 @@ h2 {
 
 .list-style {
     padding: 20px;
-
 }
 
 .list-style a {
@@ -104,15 +104,11 @@ h2 {
 .slogan {
     font-size: 7vw;
     text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
-
 }
 
 .white-space {
     white-space: nowrap;
 }
-
-
-
 /* SECTION SERVICES + PRESENTATION */
 .verbar {
     display: none;
@@ -147,31 +143,36 @@ h2 {
     margin: 20px;
     width: 50%;
 }
+.pad-5 {
+    padding-top: 6rem !important;
+}
 
 /* SECTION PRESTATIONS */
 
-    .boulangerie-h2:before,.boulangerie-h2:after {
-        content: "";
-        position: relative;
-        top: 0;
-        width: 20vw;
-        overflow: hidden;
-        height: 50px;
-        display: inline-block;
-        background: url(images/vibration.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-right: 30px;
-    }
+.boulangerie-h2:before,.boulangerie-h2:after {
+    content: "";
+    position: relative;
+    top: 0;
+    width: 20vw;
+    overflow: hidden;
+    height: 50px;
+    display: inline-block;
+    background: url(images/vibration.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+}
 
-    .boulangerie-h2:after {
-        margin-left: 30px;
-    }
-    .prestations-h2{
-        text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
+.boulangerie-h2:after {
+    margin-left: 30px;
+}
+.prestations-h2{
+    text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
     .prestations {
-        background-image: url("images/galette-bg-op-70.jpg");
+        background-image: url("images/galette-bg.jpg");
+        width: 100%;
         height: 450px;
         background-size: cover;
     }
@@ -186,27 +187,18 @@ h2 {
 
     .orange {
         color: rgb(251, 87, 2);
+        font-size: 3rem;
     }
 
     .marron {
         color: rgb(102, 59, 16);
+        font-size: 3rem;
     }
 
     .rem2 {
         font-size: 2rem;
     }
-    
 
-    @media (max-width: 768px) {
-
-        h2:before {
-            display: none;
-        }
-
-        h2:after {
-            display: none;
-        }
-    }
 
 /* FOOTER */
 /* colors */
@@ -237,33 +229,71 @@ h2 {
 .mb-66{
     margin-bottom: 4.125rem;
 }
-@media screen and (max-width:991px){
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .slogan {
+        font-size: 9vw;
+    }
+    
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .slogan {
+        font-size: 9vw;
+    }
     .font-size-21{
         font-size: 1.1rem;
     }
-}
-@media screen and (max-width:440px){
-footer .col-6{
-    flex: 0 0 0 70%!important;
-    flex-basis: 70%!important;
-    max-width: 70%!important;
-}
-.logo-bakery{
-    width:100%!important;
-    height:auto;
-}
+    .carousel-item {
+        display: none !important;
+    }
+    .try {
+        background-image: url("images/bg-header-3.png");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+    .marron {
+        font-size: 2.5rem;
+    }
+    .galette {
+        width: 85%;
+    }
 }
 
-/* MEDIA HEADER */ 
-
+@media (max-width: 767px) {
+    .slogan {
+        font-size: 14vw;
+    }
+    .boulangerie-h2::before, .boulangerie-h2::after  {
+        display: none;
+    }
+}
+  
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .description {
+        text-align: start !important;
+        width: 75%;
+    }
     .size-logo {
         width: 100px;
         height: 100px;
     }
-
+    .orange {
+        font-size: 3rem !important;
+    }
+    .marron {
+        font-size: 3rem !important;
+        /* margin-left: 3rem; */
+    }
+    .margin-r5 {
+        margin-right: 5rem;
+    }
+    .margin-r2 {
+        margin-right: 2.5rem;
+    }
     .pos-adress {
         top: 4rem;
         left: 13rem;
@@ -275,11 +305,6 @@ footer .col-6{
         left: 13rem;
         font-size: 1.3rem;
     }
-
-    .slogan {
-        font-size: 14vw;
-    }
-
     .carousel-item {
         display: none !important;
     }
@@ -290,57 +315,27 @@ footer .col-6{
         background-size: cover;
         height: 100vh;
     }
-}
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
-    .pos-adress {
-        top: 6rem;
-        left: 23rem;
+    .img-fluid {
+        width: calc(100vw/4);
     }
-
-    .pos-phone {
-        top: 15rem;
-        left: 23rem;
-    }
-
-    .slogan {
-        font-size: 12vw;
-    }
-
-    .carousel-item {
-        display: none !important;
-    }
-
-    .try {
-        background-image: url("images/bg-header-3.png");
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
+    .galette {
+        width: 100%;
     }
 }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .slogan {
-        font-size: 9vw;
+@media screen and (max-width:440px){
+    footer .col-6{
+        flex: 0 0 0 70%!important;
+        flex-basis: 70%!important;
+        max-width: 70%!important;
     }
-
-    .carousel-item {
-        display: none !important;
-    }
-
-    .try {
-        background-image: url("images/bg-header-3.png");
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
+    .logo-bakery{
+        width:100%!important;
+        height:auto;
     }
 }
+    
+    
+    
+  
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
-    .slogan {
-        font-size: 9vw;
-    }
-}
+

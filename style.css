@@ -14,7 +14,6 @@ h1,h2,h3,.font {
     font-family: "Caferus Normal";
 }
 h2 {
-    color: rgb(220, 128, 103);
     font-size: 5rem;
 }
 .text-brown{
@@ -105,7 +104,8 @@ h2 {
     height: 130px;
 }
 .circles {
-    background-color: #C67A00;
+    background-color: #E2A644;
+    /* background-color: #C67A00; */
 }
 .font-size-25{
     font-size: 1.5rem;
@@ -166,9 +166,7 @@ h2 {
         color: rgb(102, 59, 16);
         font-size: 3rem;
     }
-    .rem2 {
-        font-size: 2rem;
-    }
+
 /* FOOTER */
 /* colors */
 .bg-brown-light{
@@ -199,13 +197,13 @@ h2 {
     margin-bottom: 4.125rem;
 }
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media  (max-width: 1200px) {
     .slogan {
         font-size: 9vw;
     }
 }
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media  (max-width: 991px) {
     .slogan {
         font-size: 9vw;
     }
@@ -237,7 +235,7 @@ h2 {
     }
 }
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .description {
         text-align: start !important;
         width: 75%;
@@ -246,12 +244,8 @@ h2 {
         width: 100px;
         height: 100px;
     }
-    .orange {
-        font-size: 3rem !important;
-    }
-    .marron {
-        font-size: 3rem !important;
-        /* margin-left: 3rem; */
+    .orange,.marron {
+        font-size: 2rem !important;
     }
     .margin-r5 {
         margin-right: 5rem;
@@ -264,7 +258,6 @@ h2 {
         left: 13rem;
         font-size: 1.3rem;
     }
-
     .pos-phone {
         top: 10rem;
         left: 13rem;
@@ -287,15 +280,19 @@ h2 {
     }
 }
 @media screen and (max-width:440px){
+    .logo-bakery{
+        width:100%!important;
+        height:auto;
+    }
+    .orange,.marron {
+        font-size: 2rem !important;
+    }
     footer .col-6{
         flex: 0 0 0 70%!important;
         flex-basis: 70%!important;
         max-width: 70%!important;
     }
-    .logo-bakery{
-        width:100%!important;
-        height:auto;
-    }
+    
 }
     
     

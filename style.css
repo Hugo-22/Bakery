@@ -1,21 +1,16 @@
 /* Général */
 @font-face {
-    font-family: 'Carefus Normal';
+    font-family: 'Carefus Normal', Arial, Helvetica, sans-serif;
     src: url("fonts/CaferusNormal.otf") format("otf");
 }
-
 html {
     font-size: 62.5%;
 }
-
 body,h1,h2,p {
     margin: 0;
     padding: 0;
 }
-
-h1,
-h2,
-h3, .font {
+h1,h2,h3,.font {
     font-family: "Caferus Normal";
 }
 h2 {
@@ -26,12 +21,10 @@ h2 {
     color: #422E1A;
 }
 /* HEADER */
-
 .header {
     height: 100vh;
     width: 100%;
 }
-
 .pos-relative {
     position: relative;
 }
@@ -42,14 +35,12 @@ h2 {
     max-width: auto;
     border-radius: 50%;
 }
-
 .pos-logo {
     position: absolute;
     top: 3rem;
     left: 1rem;
     z-index: 1000;
 }
-
 .pos-adress {
     position: absolute;
     top: 6rem;
@@ -59,7 +50,6 @@ h2 {
     font-size: 1.8rem;
     width: auto;
 }
-
 .pos-phone {
     position: absolute;
     top: 9rem;
@@ -68,21 +58,16 @@ h2 {
     color: white;
     font-size: 1.8rem;
 }
-
 .list-nav {
     list-style: none;
     font-family: "Caferus Normal";
-    /* text-shadow: 5px 2px 2px rgb(0, 0, 0); */
 }
-
 .list-style {
     padding: 20px;
 }
-
 .list-style a {
     color: white;
 }
-
 .pos-menu {
     position: absolute;
     top: 6rem;
@@ -91,7 +76,6 @@ h2 {
     color: white;
     font-size: 2.4rem;
 }
-
 .pos-slogan {
     position: absolute;
     top: 50%;
@@ -100,12 +84,10 @@ h2 {
     z-index: 900;
     color: white;
 }
-
 .slogan {
     font-size: 7vw;
     text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
 .white-space {
     white-space: nowrap;
 }
@@ -134,11 +116,9 @@ h2 {
 .background3 {
     padding: 20px;
 }
-
 .bar {
     margin: 40px;
 }
-
 .description {
     margin: 20px;
     width: 50%;
@@ -146,9 +126,7 @@ h2 {
 .pad-5 {
     padding-top: 6rem !important;
 }
-
 /* SECTION PRESTATIONS */
-
 .boulangerie-h2:before,.boulangerie-h2:after {
     content: "";
     position: relative;
@@ -169,37 +147,28 @@ h2 {
 .prestations-h2{
     text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
     .prestations {
         background-image: url("images/galette-bg.jpg");
         width: 100%;
         height: 450px;
         background-size: cover;
     }
-
     .galette {
         background-color: rgba(255, 255, 255, 0.7);
         height: 196px;
         width: 967px;
     }
-
-    
-
     .orange {
         color: rgb(251, 87, 2);
         font-size: 3rem;
     }
-
     .marron {
         color: rgb(102, 59, 16);
         font-size: 3rem;
     }
-
     .rem2 {
         font-size: 2rem;
     }
-
-
 /* FOOTER */
 /* colors */
 .bg-brown-light{
@@ -234,7 +203,6 @@ h2 {
     .slogan {
         font-size: 9vw;
     }
-    
 }
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -260,7 +228,6 @@ h2 {
         width: 85%;
     }
 }
-
 @media (max-width: 767px) {
     .slogan {
         font-size: 14vw;
@@ -269,8 +236,6 @@ h2 {
         display: none;
     }
 }
-  
-
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .description {
@@ -308,7 +273,6 @@ h2 {
     .carousel-item {
         display: none !important;
     }
-
     .try {
         background-image: url("images/bg-header-3.png");
         background-position: center;

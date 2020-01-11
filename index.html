@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Groupe X">
+    <meta name="description" content="Présentation de la boulangerie Bakery de Vesoul. De ses produits du moment et du quotidien. Retrouvez également toutes les informations de contact de votre boulangerie Bakery.">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:description" content="Présentation de la boulangerie Bakery de Vesoul. De ses produits du moment et du quotidien. Retrouvez également toutes les informations de contact de votre boulangerie Bakery.">
+    <meta property="og:title" content="Boulangerie Bakery">
+    <link rel="shortcut icon" href="images/logo-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="menu-burger.css">
     <link rel="stylesheet" href="style.css">
 
@@ -149,7 +155,7 @@
         </div>
     </div>
     <div class="d-flex flex-column justify-content-center align-items-center text-black pt-5 pad-5" alt="...">
-        <h2 class="boulangerie-h2 text-brown">NOTRE BOULANGERIE</h2>
+        <h2 id="presentation" class="boulangerie-h2 text-brown">NOTRE BOULANGERIE</h2>
         <div class="description rem2 text-center">
             <p>La Boulangerie <b>Bakery</b> vous ouvre ses portes toute l'année dans sa boulangerie à Vesoul.</p> <br>
             <p>Maître artisan, tous nos produits sont fabriqués dans nos cuisines. Pour les fêtes de fin d'année, pour
@@ -165,7 +171,7 @@
 
         <div class="container p-0 d-flex  flex-column align-items-center"">
 
-            <h2 class="prestations-h2 col-12 text-center mb-4 text-brown py-5">PRESTATIONS</h2>
+            <h2 id="prestation" class="prestations-h2 col-12 text-center mb-4 text-brown py-5">PRESTATIONS</h2>
 
             <div class="galette d-flex justify-content-center align-items-center flex-column">
                 <p class="font orange">EN CE MOMENT</p>
@@ -180,7 +186,7 @@
                 <div
                     class="col-10 col-sm-4 d-flex flex-sm-column flex-md-column flex-lg-column justify-content-start align-items-center">
                         <div class="d-flex justify-content-start">
-                        <img src="images/vienoiseries.png" class="img-fluid rounded-circle pb-4"
+                        <img src="images/vienoiseries.png" class="img-fluid size-img rounded-circle pb-4"
                             alt="Responsive image">
                     </div>
                     <div class="d-flex justify-content-start">
@@ -192,7 +198,7 @@
                 <div
                     class="col-10 col-sm-4 d-flex flex-sm-column flex-md-column flex-lg-column justify-content-start align-items-center">
                     <div class="d-flex justify-content-start">
-                        <img src="images/desserts.png" class="img-fluid rounded-circle pb-4"
+                        <img src="images/desserts.png" class="img-fluid size-img rounded-circle pb-4"
                             alt="Responsive image">
                     </div>
 
@@ -203,7 +209,7 @@
                 <div
                     class="col-10 col-sm-4 d-flex flex-sm-column flex-md-column flex-lg-column align-items-center">
                     <div class="d-flex justify-content-start">
-                        <img src="images/macarrons.png" class="img-fluid rounded-circle pb-4"
+                        <img src="images/macarrons.png" class="img-fluid size-img rounded-circle pb-4"
                             alt="Responsive image">
                     </div>
 
@@ -221,17 +227,17 @@
                 <div class="row w-100 mw-100 p-0 m-0">
                     <div class="col-12 w-100 mw-100 p-0 m-0 d-none d-sm-flex">
                         <img src="images/img-1-600x600.jpg" alt="images pain et baguettes" width="600" height="600"
-                            class="img-fluid">
+                            class="img-fluid size-img">
                         <img src="images/img-3-600x600.jpg" alt="images pain et baguettes" width="600" height="600"
-                            class="img-fluid">
+                            class="img-fluid size-img">
                         <img src="images/img-5-600x600.jpg" alt="images pain et baguettes" width="600" height="600"
-                            class="img-fluid">
+                            class="img-fluid size-img">
                         <img src="images/img-13-600x600.jpg" alt="images pain et baguettes" width="600" height="600"
-                            class="img-fluid">
+                            class="img-fluid size-img">
                         <img src="images/img-15-600x600.jpg" alt="images pain et baguettes" width="600" height="600"
-                            class="img-fluid">
+                            class="img-fluid size-img">
                         <img src="images/img-17-600x600.jpg" alt="images pain et baguettes" width="600" height="600"
-                            class="img-fluid">
+                            class="img-fluid size-img">
                     </div>
                 </div>
             </div>
@@ -281,7 +287,7 @@
                     <div class="col-md-12 col-lg-4 order-2 order-md-3 order-lg-2 pb-4">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.4016151293627!2d6.018423515926615!3d47.247849479162454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d631f26055e53%3A0xc790bb9f6dad97ed!2sPFG%20-%20SERVICES%20FUN%C3%89RAIRES!5e0!3m2!1sfr!2sfr!4v1578412189219!5m2!1sfr!2sfr"
-                            width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                     <!-- adress, tel -->
                     <div class="col-12 col-md-6 col-lg-4 order-3 order-md-2 order-lg-3 pb-4 font-size-21 px-0 pb-4">

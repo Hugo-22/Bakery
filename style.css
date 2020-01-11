@@ -1,6 +1,6 @@
 /* Général */
 @font-face {
-    font-family: 'Carefus Normal';
+    font-family: 'Carefus Normal', Arial, Helvetica, sans-serif;
     src: url("fonts/CaferusNormal.otf") format("otf");
 }
 
@@ -8,25 +8,43 @@ html {
     font-size: 62.5%;
 }
 
-body,h1,h2,p {
+body,
+h1,
+h2,
+p {
     margin: 0;
     padding: 0;
 }
 
 h1,
 h2,
-h3, .font {
+h3,
+.font {
     font-family: "Caferus Normal";
 }
+
 h2 {
-    color: rgb(220, 128, 103);
     font-size: 5rem;
 }
-.text-brown{
+
+h3 {
+    font-size: 2.5rem;
+}
+
+.logo-bakery {
+    width: 250px;
+    height: 87px;
+}
+
+.text-brown {
     color: #422E1A;
 }
-/* HEADER */
 
+.rem2 {
+    font-size: 2rem;
+}
+
+/* HEADER */
 .header {
     height: 100vh;
     width: 100%;
@@ -72,7 +90,6 @@ h2 {
 .list-nav {
     list-style: none;
     font-family: "Caferus Normal";
-    /* text-shadow: 5px 2px 2px rgb(0, 0, 0); */
 }
 
 .list-style {
@@ -103,34 +120,42 @@ h2 {
 
 .slogan {
     font-size: 7vw;
-    text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .white-space {
     white-space: nowrap;
 }
+
 /* SECTION SERVICES + PRESENTATION */
 .verbar {
     display: none;
 }
+
 .background2 {
     background: url("images/slide-1.jpg") no-repeat;
     background-size: cover;
     padding: 30px 0;
 }
-.icone{
+
+.icone {
     width: 130px;
     height: 130px;
 }
+
 .circles {
-    background-color: #C67A00;
+    background-color: #E2A644;
+    /* background-color: #C67A00; */
 }
-.font-size-25{
+
+.font-size-25 {
     font-size: 1.5rem;
 }
-.mw-200{
+
+.mw-200 {
     max-width: 200px;
 }
+
 .background3 {
     padding: 20px;
 }
@@ -143,13 +168,14 @@ h2 {
     margin: 20px;
     width: 50%;
 }
+
 .pad-5 {
     padding-top: 6rem !important;
 }
 
 /* SECTION PRESTATIONS */
-
-.boulangerie-h2:before,.boulangerie-h2:after {
+.boulangerie-h2:before,
+.boulangerie-h2:after {
     content: "";
     position: relative;
     top: 0;
@@ -166,118 +192,162 @@ h2 {
 .boulangerie-h2:after {
     margin-left: 30px;
 }
-.prestations-h2{
-    text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.6);
+
+.prestations-h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding-top: 60px !important;
 }
 
-    .prestations {
-        background-image: url("images/galette-bg.jpg");
-        width: 100%;
-        height: 450px;
-        background-size: cover;
-    }
+.prestations {
+    background-image: url("images/galette-bg.jpg");
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    margin-top: 60px;
+}
 
-    .galette {
-        background-color: rgba(255, 255, 255, 0.7);
-        height: 196px;
-        width: 967px;
-    }
+.galette {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 196px;
+    width: 967px;
+}
 
-    
+.orange {
+    color: rgb(251, 87, 2);
+    font-size: 3rem;
+}
 
-    .orange {
-        color: rgb(251, 87, 2);
-        font-size: 3rem;
-    }
-
-    .marron {
-        color: rgb(102, 59, 16);
-        font-size: 3rem;
-    }
-
-    .rem2 {
-        font-size: 2rem;
-    }
-
+.marron {
+    color: rgb(102, 59, 16);
+    font-size: 3rem;
+}
 
 /* FOOTER */
 /* colors */
-.bg-brown-light{
+.bg-brown-light {
     background: #5B4024;
 }
-.bg-brown{
+
+.bg-brown {
     background: #422E1A;
 }
-.bg-brown-dark{
+
+.bg-brown-dark {
     background: #312213;
 }
-.img-fluid{
-    width:calc(100vw/6);
+
+.img-fluid {
+    width: calc(100vw/6);
 }
-.font-helvetica{
+
+.font-helvetica {
     font-family: Helvetica, Arial, sans-serif;
 }
-.font-size-21{
+
+.font-size-21 {
     font-size: 1.3rem;
 }
-.text-yellow{
+
+.text-yellow {
     color: #eeb574;
 }
-.mt-30{
+
+.mt-30 {
     margin-top: 1.875rem;
 }
-.mb-66{
+
+.mb-66 {
     margin-bottom: 4.125rem;
 }
-@media screen and (max-width:991px){
-    .font-size-21{
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) {
+    .slogan {
+        font-size: 9vw;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+    .slogan {
+        font-size: 9vw;
+    }
+    .boulangerie-h2:before, .boulangerie-h2:after {
+        width: 17vw !important;
+    }
+
+    .font-size-21 {
         font-size: 1.1rem;
     }
-}
-@media (max-width: 768px) {
-    .boulangerie-h2::before, .boulangerie-h2::after  {
-        display: none;
+
+    .carousel-item {
+        display: none !important;
+    }
+
+    .try {
+        background-image: url("images/bg-header-3.png");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .marron {
+        font-size: 2.5rem;
+    }
+
+    .galette {
+        width: 85%;
+    }
+    .size-img {
+        width: calc(100vw/3) !important;
+        height: 100% !important;
     }
 }
 
-@media screen and (max-width:440px){
-footer .col-6{
-    flex: 0 0 0 70%!important;
-    flex-basis: 70%!important;
-    max-width: 70%!important;
-}
-.logo-bakery{
-    width:100%!important;
-    height:auto;
-}
-}
+@media (max-width: 767px) {
+    .slogan {
+        font-size: 14vw;
+    }
 
-/* MEDIA HEADER */ 
-
+    .boulangerie-h2::before,
+    .boulangerie-h2::after {
+        display: none;
+    }
+    .pos-phone {
+        top: 15rem;
+        left: 20rem;
+    }
+    /* .img-fluid {
+        width: calc(100vw/3) !important;
+        height: 100% !important;
+    } */
+}
 
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
     .description {
         text-align: start !important;
         width: 75%;
     }
+
     .size-logo {
         width: 100px;
         height: 100px;
     }
-    .orange {
-        font-size: 3rem !important;
-    }
+
+    .orange,
     .marron {
-        font-size: 3rem !important;
-        /* margin-left: 3rem; */
+        font-size: 2rem !important;
     }
+
     .margin-r5 {
         margin-right: 5rem;
     }
+
     .margin-r2 {
         margin-right: 2.5rem;
     }
+
     .pos-adress {
         top: 4rem;
         left: 13rem;
@@ -290,10 +360,6 @@ footer .col-6{
         font-size: 1.3rem;
     }
 
-    .slogan {
-        font-size: 14vw;
-    }
-
     .carousel-item {
         display: none !important;
     }
@@ -304,76 +370,36 @@ footer .col-6{
         background-size: cover;
         height: 100vh;
     }
+
     .img-fluid {
-        width: calc(100vw/4);
+        width: 100px;
+        height: 100px;
+        max-width: unset;
     }
+
     .galette {
         width: 100%;
     }
 }
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
-    .pos-adress {
-        top: 6rem;
-        left: 23rem;
+@media screen and (max-width:440px) {
+    .logo-bakery {
+        width: 250px;
+        height: 87px;
+    }
+    h2 {
+        font-size: 3rem !important;
     }
 
-    .pos-phone {
-        top: 15rem;
-        left: 23rem;
-    }
-
-    .slogan {
-        font-size: 12vw;
-    }
-
-    .carousel-item {
-        display: none !important;
-    }
-
-    .try {
-        background-image: url("images/bg-header-3.png");
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-    }
+    .orange,
     .marron {
-        font-size: 2rem;
-    }
-    .galette {
-        width: 100%;
-    }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .slogan {
-        font-size: 9vw;
+        font-size: 1.5rem !important;
     }
 
-    .carousel-item {
-        display: none !important;
+    footer .col-6 {
+        flex: 0 0 0 70% !important;
+        flex-basis: 70% !important;
+        max-width: 70% !important;
     }
 
-    .try {
-        background-image: url("images/bg-header-3.png");
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-    }
-    .marron {
-        font-size: 2.5rem;
-    }
-    .galette {
-        width: 85%;
-    }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
-    .slogan {
-        font-size: 9vw;
-    }
-    
 }
